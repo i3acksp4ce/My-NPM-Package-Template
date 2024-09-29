@@ -1,0 +1,46 @@
+{
+  "name": "i3acksp4ce-demo-lib",
+  "version": "0.0.0-experimental.1",
+  "author": {
+    "name": "i3acksp4ce",
+    "url": "https://github.com/i3acksp4ce",
+    "email": "i3acksp4ce@gmail.com"
+  },
+  "keywords": [
+    "demo"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-security": "^3.0.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-sonarjs": "^2.0.2",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.8",
+    "vite-plugin-dts": "^4.2.2",
+    "vitest": "^2.1.1"
+  }
+}
